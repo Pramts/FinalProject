@@ -17,9 +17,18 @@ namespace FinalProject.view
     /// </summary>
     public partial class LoginWindow : Window
     {
+        controller.Pengguna pengguna;
         public LoginWindow()
         {
             InitializeComponent();
+          
+            //instance
+            pengguna = new controller.Pengguna(this);
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            pengguna.Login();
         }
     }
 }
