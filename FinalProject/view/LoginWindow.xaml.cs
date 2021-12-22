@@ -17,18 +17,27 @@ namespace FinalProject.view
     /// </summary>
     public partial class LoginWindow : Window
     {
+        //declare object
         controller.Pengguna pengguna;
         public LoginWindow()
         {
             InitializeComponent();
-          
             //instance
             pengguna = new controller.Pengguna(this);
+            //Model.ModelTemplate cek = new Model.ModelTemplate();
+            //cek.cekKoneksi();
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             pengguna.Login();
+        }
+
+        private void lblCreateAccount_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Close();
         }
     }
 }

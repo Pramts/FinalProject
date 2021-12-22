@@ -5,71 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject.view"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1366">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <Grid Background="#60A8F0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="80"/>
-            </Grid.RowDefinitions>
-
-            <DockPanel Grid.Row="1" x:Name="menuHome" MouseDown="menuHome_MouseDown_1">
-                <Image Width="40" Source="/icon/Home"/>
-            </DockPanel>
-
-            <DockPanel Grid.Row="2" x:Name="menuKeranjang" MouseDown="menuKeranjang_MouseDown">
-                <Image Width="40" Source="/icon/Keranjang"/>
-            </DockPanel>
-
-            <DockPanel Grid.Row="3" x:Name="menuHistory" MouseDown="menuHistory_MouseDown">
-                <Image Width="40" Source="/icon/History"/>
-            </DockPanel>
-
-            <DockPanel Grid.Row="4" x:Name="menuSetting" MouseDown="menuSetting_MouseDown">
-                <Image Width="40" Source="/icon/Setting"/>
-            </DockPanel>
-
-            <DockPanel Grid.Row="6" x:Name="menuExit">
-                <Image Width="40" Source="/icon/Exit"/>
-            </DockPanel>
-
-        </Grid>
-
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <Grid Background="#A6CEF7">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <DockPanel x:Name="dataUser" Grid.Column="1"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Center"
-                           Margin="0,0,20,0">
-                    <Image  Source="/icon/Profile    "/>
-                    <Label Content="Dany Kurniawan" BorderThickness="0,8.5,0,0"/>
-                </DockPanel>
-            </Grid>
-
-            <Frame Grid.Row="1" x:Name="frmMain"
-                   NavigationUIVisibility="Hidden"
-                   Margin="10"/>
-        </Grid>
-
+        
     </Grid>
 </Window>

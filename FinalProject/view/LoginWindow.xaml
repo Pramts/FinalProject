@@ -77,12 +77,12 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Label Content="Create New Account" 
+            <Label x:Name="lblCreateAccount" Content="Create New Account" 
                    Margin="0,10,0,0" Padding="0"  
                    FontSize="16" 
                    Foreground="#3C45D5" 
                    HorizontalContentAlignment="Center" 
-                   HorizontalAlignment="Center"/> 
+                   HorizontalAlignment="Center" MouseDown="lblCreateAccount_MouseDown"/> 
 
         </StackPanel>
 

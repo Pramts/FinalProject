@@ -7,31 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="icon\Exit" />
-    <None Remove="icon\History" />
-    <None Remove="icon\Home" />
-    <None Remove="icon\Keranjang" />
-    <None Remove="icon\Profile" />
-    <None Remove="icon\Setting" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="icon\Exit">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="icon\History">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="icon\Home" />
-    <Resource Include="icon\Keranjang" />
-    <Resource Include="icon\Profile" />
-    <Resource Include="icon\Setting">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
 </Project>
