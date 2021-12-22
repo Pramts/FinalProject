@@ -23,7 +23,7 @@
                 <RowDefinition Height="80"/>
             </Grid.RowDefinitions>
 
-            <DockPanel Grid.Row="1" x:Name="menuHome">
+            <DockPanel Grid.Row="1" x:Name="menuHome" MouseDown="menuHome_MouseDown_1">
                 <Image Width="40" Source="/icon/Home"/>
             </DockPanel>
 
@@ -31,11 +31,11 @@
                 <Image Width="40" Source="/icon/Keranjang"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="3" x:Name="menuHistory">
+            <DockPanel Grid.Row="3" x:Name="menuHistory" MouseDown="menuHistory_MouseDown">
                 <Image Width="40" Source="/icon/History"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="4" x:Name="menuSetting">
+            <DockPanel Grid.Row="4" x:Name="menuSetting" MouseDown="menuSetting_MouseDown">
                 <Image Width="40" Source="/icon/Setting"/>
             </DockPanel>
 
