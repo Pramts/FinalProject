@@ -24,5 +24,15 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+
+        private void menuHome_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            frmMain.Navigate(new view.HomePage());
+        }
+
+        private void menuKeranjang_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            frmMain.Navigate(new view.KeranjangPage());
+        }
     }
 }
