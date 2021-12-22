@@ -70,7 +70,7 @@
                     FontSize="24" 
                     FontFamily="Arial Rounded MT Bold" 
                     Foreground="White" 
-                    Background="#FF0148A4">
+                    Background="#FF0148A4" Click="btnLogin_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="25"></Setter>
