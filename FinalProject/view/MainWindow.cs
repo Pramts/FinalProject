@@ -13,22 +13,23 @@ using System.Windows.Shapes;
 namespace FinalProject.view
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class MainWindow : Window
     {
-        controller.Pengguna pengguna;
-        public LoginWindow()
+        public MainWindow()
         {
             InitializeComponent();
-          
-            //instance
-            pengguna = new controller.Pengguna(this);
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        private void menuHome_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            pengguna.Login();
+            frmMain.Navigate(new view.HomePage());
+        }
+
+        private void menuKeranjang_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            frmMain.Navigate(new view.KeranjangPage());
         }
     }
 }

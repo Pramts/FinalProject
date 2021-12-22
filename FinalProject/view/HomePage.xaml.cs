@@ -8,27 +8,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FinalProject.view
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for HomePage.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class HomePage : Page
     {
-        controller.Pengguna pengguna;
-        public LoginWindow()
+        public HomePage()
         {
             InitializeComponent();
-          
-            //instance
-            pengguna = new controller.Pengguna(this);
-        }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            pengguna.Login();
         }
     }
 }
