@@ -18,7 +18,7 @@ namespace FinalProject.model
         public static SqlConnection GetSqlConnection()
         {
             conn = new SqlConnection();
-            conn.ConnectionString = "Data Source = LAPTOP-4NPDE09G;" +
+            conn.ConnectionString = "Data Source = MSI;" +
                                     "Initial Catalog = MarketPlace;" +
                                     "Integrated Security = True;";
             return conn;
